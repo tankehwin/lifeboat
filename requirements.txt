@@ -1,0 +1,9 @@
+member information
+login - DONE
+online registration - DONE
+reports (who is missing?)
+different user privileges
+status markers per person (labels/tags)
+comments on progress
+events
+events attendance

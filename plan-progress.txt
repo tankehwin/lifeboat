@@ -1,0 +1,6 @@
+- need to build search criteria for user listing
+- currently using links does not trigger code in user listing *FIXED* (add '?dummyparam=dummyvalue' to link href to trigger servlet code) 
+- dashboard page needs links to all available reports
+- dashboard page needs to display events as default
+- can we draw info from google calendar to display in events?
+- need to fix up code/project so can use debug function with breakpoint properly
