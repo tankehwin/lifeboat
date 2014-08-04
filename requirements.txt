@@ -1,9 +1,13 @@
-member information
+member information profile edit
 login - DONE
 online registration - DONE
+activity log
+check attendance
+cellgroup info lookup
 reports (who is missing?)
 different user privileges
 status markers per person (labels/tags)
-comments on progress
+comments and notes on individual member's progress
+mass email function
 events
 events attendance

@@ -18,6 +18,11 @@ public class UserModel {
 	public static final String COLNAME_DATECREATED = "date_created";
 	public static final String COLNAME_DATEUPDATED = "date_updated";
 	
+	public static final Integer ACCTYPE_ADMIN_VALUE = 1;
+	public static final String ACCTYPE_ADMIN_NAME = "admin";
+	public static final Integer ACCTYPE_MEMBER_VALUE = 2;
+	public static final String ACCTYPE_MEMBER_NAME = "member";
+	
 	private Integer id;
 	private String fullName;
 	private String shortName;

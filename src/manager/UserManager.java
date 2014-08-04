@@ -15,7 +15,6 @@ public class UserManager {
 		String sql = "SELECT * FROM " + TableNames.userLoginTable + " WHERE " + UserLoginModel.COLNAME_NAME + " = '" +
 				username + "' AND " + UserLoginModel.COLNAME_PASSWORD + " = '" + password + "'";
 		Statement st= conn.createStatement();
-		System.out.println(sql);
 		ResultSet rs = st.executeQuery(sql);
 		while(rs.next()) {
 			userLogin = new UserLoginModel();
@@ -75,7 +74,7 @@ public class UserManager {
 					orgType.trim() + "', '" +
 					email.trim() + "', '" +
 					phone.trim() + "', '" +
-					1 + "', '" +
+					UserModel.ACCTYPE_MEMBER_VALUE + "', '" + // registration process only ever produces members, not admins
 					TimestampGenerator.getTimestamp() + "', '" +
 					TimestampGenerator.getTimestamp() + "', '" +
 					TimestampGenerator.getTimestamp() + 

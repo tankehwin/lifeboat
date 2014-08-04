@@ -4,6 +4,7 @@
 <%@ page import="java.util.*"%>
 <%@ page import="manager.*"%>
 <%@ page import="model.*"%>
+<%@ page import="data.*"%>
 <%@ page import="utils.*"%>
 <%
 	try {
@@ -16,12 +17,13 @@
 		String dbConnString = prop.getProperty("dbConnStr");
 		String dbUser = prop.getProperty("dbUsr");
 		String dbPassword = prop.getProperty("dbPwd");
+		String connDriver = prop.getProperty("connDriver");
 		
 		Connection conn;
 		if(session.getAttribute("conn") == null) {
 
 			DBConn connObj = new DBConn();
-			conn = DBConn.getConn(dbConnString, dbUser, dbPassword);
+			conn = DBConn.getConn(dbConnString, dbUser, dbPassword, connDriver);
 			session.setAttribute("conn", conn);
 		}
 		

@@ -20,6 +20,13 @@ public class TimestampGenerator {
 		return result;
 	}
 	
+	public static String getFormattedDate(Timestamp value) throws Exception {
+		Date date = (Date) value;
+		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+		String result = sdf.format(date);
+		return result;
+	}
+	
 	public static Timestamp createTimestamp(String value) throws Exception {
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date date = dateFormat.parse(value);

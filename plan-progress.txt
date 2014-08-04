@@ -1,4 +1,5 @@
-- need to build search criteria for user listing
+- need to build profile edit page
+- need to build mass email sending page
 - currently using links does not trigger code in user listing *FIXED* (add '?dummyparam=dummyvalue' to link href to trigger servlet code) 
 - dashboard page needs links to all available reports
 - dashboard page needs to display events as default

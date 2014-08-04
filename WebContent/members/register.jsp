@@ -61,6 +61,10 @@
 <input type="hidden" name="action" value="registerUser">
 <table class="formtable">
 	<tr>
+		<th colspan=3>Register
+		</th>
+	</tr>
+	<tr>
 		<td>Username
 		</td>
 		<td>:
